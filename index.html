@@ -1,247 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-  <!-- Animate On Scroll Library -->
+      <!-- Animate On Scroll Library -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .desc {
+            margin-top: 7%;
+        }
 
+        .cardnya {
 
-  <title>Hello, world!</title>
-  <style type="text/css">
-    .logo {
-      float: center;
-      margin-right: 50px;
-      margin-left: 50px;
-      width: 7%;
-    }
-
-    .kotak {
-      width: 300px;
-      height: 200px;
-      border: 4px solid #575D63;
-    }
-
-    .gambar {
-      width: 80%;
-      height: 400px;
-      margin-left: 150px;
-      border-radius: 30px;
-    }
-
-    .gambar1 {
-      width: 500px;
-      height: 300px;
-      float: left;
-      margin-left: 150px;
-      margin-top: 80px;
-      border-radius: 15px;
-
-    }
-
-    .text {
-      width: 600px;
-      float: left;
-      padding: 90px;
-      margin-top: 100px;
-    }
-
-    .cardnya {
-
-      margin: 5% 10%;
+            margin: 5% 10%;
 
 
 
-    }
+        }
 
-    .text1 {
-      width: 600px;
-      float: left;
-      padding: 80px;
-      padding-left: 150px;
-      padding-top: 100px;
-
-    }
-
-    .gambar3 {
-      width: 500px;
-      height: 300px;
-      float: left;
-      margin-left: 150px;
-      margin-top: 180px;
-      border-radius: 15px;
-    }
-
-    .text2 {
-      width: 600px;
-      float: left;
-      padding: 80px;
-      margin-top: 80px;
-      padding-top: 130px;
-
-    }
-
-    .desc {
-      margin-top: 7%;
-    }
-
-    .gel {
-      background-color: #3FA796;
-      padding: 2rem 1rem;
-    }
-  </style>
+        .logo {
+            float: center;
+            margin-right: 50px;
+            margin-left: 50px;
+            width: 100px;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-primary bg-primary fixed-top">
-      <div class="container-fluid">
-        <img class="logo" src="img/logo1.png" alt="">
-        <ul class="nav justify-content-center ">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Jadwal Dokter</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Tentang Kami</a>
-          </li>
+    <header
+        class="fixed-top bg-primary d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="img/logo1.png" class="logo" alt="">
+        </a>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Jadwal Dokter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Tentang Kami</a>
+            </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-success" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-  </header>
-  <div class="desc">
-    <img class="gambar" src="img/bg1.png">
 
-    <!-- <img data-aos="fade-right" data-aos-duration="1000" class="gambar2" src="enesia.jpg"> 
-<p class="text1">Naufal klinik  menghadirkan layanan kesehatan profesional dengan dokter yang berpengalaman dan berkualitas, mulai dari Dokter Umum, Spesialis Penyakit Dalam, Dokter Spesialis Anak, dan Fisioterapis yang selalu siap melayani. Semua produk dan layanan ditawarkan dengan harga yang terjangkau untuk memastikan aksesibilitasnya bagi pasien dari semua lapisan masyarakat.</p>
-
-<img class="gambar3" src="map.jpg">
- <p class="text2">Naufal klinik sudah tersebar luas di jabodetabek, total terdapat 45 cabang. dan terdapat beberapa cabang di luar negeri seperti Korea Selatan, Singapore dan Jepang. Klink ini dikenal karena harga yang tidak begitu mahal, serta pelayanan yang bagus. </p> -->
-
-    <div class="container-fluid">
-      <div class="card mb-3 cardnya" data-aos="fade-left" data-aos-duration="1000" style="max-width: 80%;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/enesia.jpg" class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Pelayan Rumah Sakit keluar Sehat</h5>
-              <p class="card-text">
-                Naufal klinik menghadirkan layanan kesehatan profesional dengan dokter yang berpengalaman dan
-                berkualitas, mulai dari Dokter Umum, Spesialis Penyakit Dalam, Dokter Spesialis Anak, dan Fisioterapis
-                yang selalu siap melayani. Semua produk dan layanan ditawarkan dengan harga yang terjangkau untuk
-                memastikan aksesibilitasnya bagi pasien dari semua lapisan masyarakat.
-
-
-              </p>
-            </div>
-          </div>
+        <div class="col-md-3 text-end">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
         </div>
-      </div>
+    </header>
+    <div class="desc">
 
-      <div data-aos="fade-right" data-aos-duration="1000" class="card mb-3 cardnya" style="max-width: 80%;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="img/map.jpg" class="img-fluid rounded-start" alt="..." style="width: 100%;">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Pelayan Rumah Sakit keluar Sehat</h5>
-              <p class="card-text">
-                Naufal klinik sudah tersebar luas di jabodetabek, total terdapat 45 cabang. dan terdapat beberapa cabang
-                di luar negeri seperti Korea Selatan, Singapore dan Jepang. Klink ini dikenal karena harga yang tidak
-                begitu mahal, serta pelayanan yang bagus.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim laborum itaque obcaecati temporibus
-                dolores consectetur commodi sit, aperiam necessitatibus magnam labore, neque beatae doloribus eligendi
-                tempore veritatis unde cum molestias.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore ut rerum recusandae dolores
-                laboriosam ab, eum, non eveniet optio sequi quod sit voluptas ipsum culpa doloribus! Corporis, dolores
-                culpa!
-              </p>
+        <div class="container-fluid">
+            <img class="cardnya img-fluid" src="img/bg1.png" style="border-radius: 15px; width:80%;">
+            <div class="card mb-3 cardnya" data-aos="fade-left" data-aos-duration="1000" style="max-width: 80%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/enesia.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Pelayan Rumah Sakit keluar Sehat</h5>
+                            <p class="card-text">
+                                Naufal klinik menghadirkan layanan kesehatan profesional dengan dokter yang
+                                berpengalaman dan
+                                berkualitas, mulai dari Dokter Umum, Spesialis Penyakit Dalam, Dokter Spesialis Anak,
+                                dan Fisioterapis
+                                yang selalu siap melayani. Semua produk dan layanan ditawarkan dengan harga yang
+                                terjangkau untuk
+                                memastikan aksesibilitasnya bagi pasien dari semua lapisan masyarakat.
+
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
+            <div data-aos="fade-right" data-aos-duration="1000" class="card mb-3 cardnya" style="max-width: 80%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/map.jpg" class="img-fluid rounded-start" alt="..." style="width: 100%;">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Pelayan Rumah Sakit keluar Sehat</h5>
+                            <p class="card-text">
+                                Naufal klinik sudah tersebar luas di jabodetabek, total terdapat 45 cabang. dan terdapat
+                                beberapa cabang
+                                di luar negeri seperti Korea Selatan, Singapore dan Jepang. Klink ini dikenal karena
+                                harga yang tidak
+                                begitu mahal, serta pelayanan yang bagus.
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim laborum itaque obcaecati
+                                temporibus
+                                dolores consectetur commodi sit, aperiam necessitatibus magnam labore, neque beatae
+                                doloribus eligendi
+                                tempore veritatis unde cum molestias.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit tempore ut rerum
+                                recusandae dolores
+                                laboriosam ab, eum, non eveniet optio sequi quod sit voluptas ipsum culpa doloribus!
+                                Corporis, dolores
+                                culpa!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row cardnya">
+                <div class="col-md-12">
+                    <div class="ratio" style="--bs-aspect-ratio: 50%;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0938034895753!2d106.64819391431307!3d-6.50980986545278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69dc352d8b3f4b%3A0x8ab5f396c2127e67!2sPUSKESMAS%20GOBANG!5e0!3m2!1sen!2sid!4v1640334804638!5m2!1sen!2sid"
+                            allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-    <!-- Code Gmaps -->
-    <div class="mapouter cardnya" data-aos="flip-down" data-aos-duration="1000">
-      <div class="gmap_canvas"><iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0938034895753!2d106.64819391431307!3d-6.50980986545278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69dc352d8b3f4b%3A0x8ab5f396c2127e67!2sPUSKESMAS%20GOBANG!5e0!3m2!1sen!2sid!4v1640334804638!5m2!1sen!2sid"
-          width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe><a
-          href="https://putlocker-is.org"></a><br>
-        <style>
-          .mapouter {
-            position: relative;
-            text-align: right;
-            height: 500px;
-            width: 600px;
-          }
-        </style><a href="https://www.embedgooglemap.net"></a>
-        <style>
-          .gmap_canvas {
-            overflow: hidden;
-            background: none !important;
-            height: 500px;
-            width: 1030px;
-          }
-        </style>
-      </div>
     </div>
-    <!-- akhir Code Gmaps -->
-
-  </div>
-
-
-
-
-
-  <!-- Optional JavaScript; choose one of the two! -->
-
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-
-  <!-- Footer -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#0d6efd" fill-opacity="1"
-      d="M0,96L24,101.3C48,107,96,117,144,122.7C192,128,240,128,288,144C336,160,384,192,432,186.7C480,181,528,139,576,112C624,85,672,75,720,90.7C768,107,816,149,864,192C912,235,960,277,1008,277.3C1056,277,1104,235,1152,224C1200,213,1248,235,1296,208C1344,181,1392,107,1416,69.3L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z">
-    </path>
-  </svg>
-  <footer class="bg-primary text-white text-center" style="padding:10px;">
-    Created by Kelompok berapa aja deh 
-  </footer>
-  <!-- Akhir Footer -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once:true
+    });
   </script>
 </body>
 
